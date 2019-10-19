@@ -11,9 +11,14 @@ items, and the total amounts of sales taxes paid. The rounding rules for sales
 tax are that for a tax rate of n%, a shelf price of p contains (np/100 rounded 
 up to the nearest 0.05) amount of sales tax.
 
+![alt text](https://github.com/amandate/salestax/blob/master/imgs/input.png)![alt text](https://github.com/amandate/salestax/blob/master/imgs/output.png)
+
 ## Instructions to Run Program
-After compiling, when you run `java Main`, you can input multiple text files. 
+In the `src` folder, run `javac *.java`
+
+Afterwards, when you run `java Main`, you can input multiple text files. 
 Be sure the text files contain are of the same format as originally provided input.
+(As displayed in the images above).
 * Example 1: `java Main "...testing/input1.txt"`
 * Example 2: `java Main "...testing/input1.txt" "...testing/input2.txt" 
 "...testing/input3.txt"`
