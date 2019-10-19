@@ -11,7 +11,6 @@ import java.io.IOException;
 
 public final class Main {
 	/** Handles input 
-	 * TODO: Handle multiple input
 	 *  Takes in a string that is the location of the text file to be passed in
 	 *  The location is based on src as the current workspace.
 	 * @throws IOException 
