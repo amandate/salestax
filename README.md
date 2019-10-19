@@ -61,6 +61,5 @@ a book title or a brand of chocolate bar.
 * testing - Folder containing all test input files.
 
 ## Resources
-* Obtained "book" and "medical product" classification data from thesaurus.com
+* Obtained "book" and "medical product" classification data from [thesaurus.com](https://www.thesaurus.com/)
 * Obtained "food" classification data from [USDA open source data](https://www.ars.usda.gov/ARSUserFiles/80400525/Data/SR27/asc/FOOD_DES.txt)
-
