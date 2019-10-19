@@ -15,7 +15,8 @@ up to the nearest 0.05) amount of sales tax.
 After compiling, when you run `java Main`, you can input multiple text files. 
 Be sure the text files contain are of the same format as originally provided input.
 * Example 1: `java Main "...testing/input1.txt"`
-* Example 2: `java Main "...testing/input1.txt" "...testing/input2.txt" "...testing/input3.txt"
+* Example 2: `java Main "...testing/input1.txt" "...testing/input2.txt" 
+"...testing/input3.txt"`
 
 ## Current Limitations
 * Data to classify an item as a book is based on whether its input line contains 
@@ -45,6 +46,5 @@ such as using open source or APIs. However,
 
 ## Resources
 * Obtained "book" and "medical product" classification data from thesaurus.com
-* Obtained "food" classification data from [USDA open source data]
-(https://www.ars.usda.gov/ARSUserFiles/80400525/Data/SR27/asc/FOOD_DES.txt)
+* Obtained "food" classification data from [USDA open source data](https://www.ars.usda.gov/ARSUserFiles/80400525/Data/SR27/asc/FOOD_DES.txt)
 
