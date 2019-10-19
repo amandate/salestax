@@ -20,7 +20,7 @@ Be sure the text files contain are of the same format as originally provided inp
 
 ## Current Limitations
 * Data to classify an item as a book is based on whether its input line contains 
-a word that is synonymous to "book". Aka doesn't handle specific book Titles.
+a word that is synonymous to "book". Aka doesn't handle specific book titles.
 * Data to classify an item as a medical product is based on whether its input 
 line contains a synonym of "medicine", "medical", "pill", "medication", or "drug". 
 Aka it doesn't handle specific brands.
@@ -29,10 +29,21 @@ currently does not include name brands, but could be tweaked to incorporate this
 * An item is classified as an imported good if it contains the word "imported" its 
 line in the input text file.
 
-## Thought Process and Limitations
+## Thought Process
 My biggest objective was figuring out how to classify items as a book, food, 
-medical product, or an imported good. I came up with several different approaches, 
-such as using open source or APIs. However,  
+medical product, or an imported good. This led me to question what type of
+input I should be expecting: generic items or brand name items? 
+
+I figured it was pretty open ended, so depending on how I set up my data, I 
+could easily tweak my program to encompass more specific items such as brands. 
+For scalability purposes, I decided to consider specific branded items, which 
+led me to consider several different approaches, such as using open source, 
+APIs, or [DBpedia](https://wiki.dbpedia.org/about). However, after further 
+research, I couldn't quite find something that worked well enough.
+
+Since the input I was given had things like "book" and "chocolate bar", I felt it
+was safe to assume (for now) that I would not receive more specific input like
+a book title or a brand of chocolate bar. 
 
 ## Important Folders and Files
 * src - Folder containing program files
