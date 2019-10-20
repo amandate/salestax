@@ -1,0 +1,6 @@
+10 boxes of imported apricots: 52.50
+1 orange: .50
+1 bag of toothpicks: 1.10
+1 bag of paper plates: 3.75
+Sales Taxes: 3.00
+Total: 57.85

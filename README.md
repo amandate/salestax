@@ -23,6 +23,15 @@ Be sure the text files contain are of the same format as originally provided inp
 * Example 2: `java Main "...testing/input1.txt" "...testing/input2.txt" 
 "...testing/input3.txt"`
 
+## Expected Input Text File Format
+Each line represents an item.
+
+Items must be in the format: [Quantity] [Item Name] at [Item Price]
+
+If the quantity is greater than 1, the given [Item Price] represents the price for **one**
+of this item. When receipt is outputted, the provided price of that item includes
+tax and quantity. (Aka it's the price for that quantity of items.
+
 ## Current Limitations
 * Data to classify an item as a book is based on whether its input line contains 
 a word that is synonymous to "book". Aka doesn't handle specific book titles.

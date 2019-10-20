@@ -1,0 +1,5 @@
+3 grapefruits: 2.25
+2 baskets of apples: 10.00
+2 plastic forks: 0.60
+Sales Taxes: 0.10
+Total: 12.85

@@ -17,30 +17,29 @@ public final class Main {
 	 * */
 	public static void main(String...args) throws IOException {
 		if (args.length == 0){
-			System.out.println("Please provide input text file.");
+			throw new Exception("Must provide at least one input.");
 		} else {
-			Data classification = new Data();
 			for (String f : args){
-				BufferedReader file = getInput(f);
-				getReceipt(file, classification);
+				getReceipt(f);
 			}
 		}
 		System.exit(1);
 	}
 	
-	/** Takes a FILENAME and returns a BufferedReader to read the file. */
-	private static BufferedReader getInput(String filename) throws FileNotFoundException{
-		return new BufferedReader(new FileReader(new File(filename)));
-	}
-	
-	/** Takes a FILE and reads it line by line to add each item to a Receipt.
-	 *  Prints completed Receipt. */
-	private static void getReceipt(BufferedReader file, Data c) throws IOException{
-		String line;
-		Receipt r = new Receipt();
-		while((line = file.readLine()) != null){
-			r.addItem(new Item(line, c));
+	/** Takes a FILENAME and opens the file to read it line by line to add 
+	 *  each item to a Receipt. Prints completed Receipt to standout. */
+	private static void getReceipt(String filename) throws IOException{
+		BufferedReader file;
+		try {
+			file = new BufferedReader(new FileReader(new File(filename)));
+			String line;
+			Receipt r = new Receipt();
+			while((line = file.readLine()) != null){
+				r.addItem(new Item(line));
+			}
+			r.printReceipt(filename);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
 		}
-		r.printReceipt();
 	}
 }

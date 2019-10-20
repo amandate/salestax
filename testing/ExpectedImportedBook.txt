@@ -1,0 +1,5 @@
+1 book imported from Mexico: 15.50
+1 book: 10.00
+1 bookcase: 38.50
+Sales Taxes: 4.25
+Total: 64.00

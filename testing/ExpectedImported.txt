@@ -1,0 +1,4 @@
+1 imported lotion: 15.85
+1 lotion imported: 17.25
+Sales Taxes: 4.35
+Total: 33.10

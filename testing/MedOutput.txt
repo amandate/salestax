@@ -1,0 +1,7 @@
+1 box of fever medicine: 10.25
+1 bottle of cough syrup: 4.37
+1 towel: 1.10
+1 bag of cough drops: 2.50
+1 pack of water: 4.00
+Sales Taxes: 0.10
+Total: 22.22

@@ -1,0 +1,6 @@
+10 boxes of imported allergy medicine: 419.90
+1 box of tissues: 3.35
+1 bottle of cold medicine: 5.75
+1 blanket: 11.00
+Sales Taxes: 21.35
+Total: 440.00

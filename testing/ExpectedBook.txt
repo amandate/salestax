@@ -1,0 +1,5 @@
+3 textbooks: 30.75
+1 binder: 3.30
+1 thesaurus: 1.00 
+Sales Taxes: 0.30
+Total: 35.05

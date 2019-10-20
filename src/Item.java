@@ -6,8 +6,7 @@ import java.util.Arrays;
  * */
 
 public class Item {	
-	Item(String receiptLine, Data c){
-		classifier = c;
+	Item(String receiptLine){
 		setValues(receiptLine);
 	}
 	
@@ -23,14 +22,23 @@ public class Item {
 	private void parseLine(String line){
 		// Split line by spaces
 		String[] split_line = line.split(" ");
+		int split_line_len = split_line.length;
 		
 		// Set QUANTITY
-		quantity = Integer.parseInt(split_line[0]);
+		try {
+			quantity = Integer.parseInt(split_line[0]);
+		} catch (NumberFormatException e){
+			throw new Exception("Incorrect input format.");
+		}
 		
 		// Set NAME and NAME_STRINGS
 		int nameend = 1;
-		while(nameend < split_line.length && !split_line[nameend].equals("at")){
+		while(nameend < split_line_len && !split_line[nameend].equals("at")){
 			++nameend;
+		}
+		
+		if (nameend == split_line_len) {
+			throw new Exception("Incorrect input format.");
 		}
 		
 		StringJoiner item_name = new StringJoiner(" ");
@@ -42,7 +50,13 @@ public class Item {
 		name_strings = Arrays.copyOfRange(split_line, 1, nameend);
 		
 		// Set PRICE
-		price = Double.parseDouble(split_line[nameend + 1]);
+		try {
+			price = Double.parseDouble(split_line[nameend + 1]);
+		} catch (IllegalArgumentException e){
+			throw new Exception("Incorrect input format.");
+		} catch (IndexOutOfBoundsException e){
+			throw new Exception("Incorrect input format.");
+		}
 	}
 	
 	/** Set IMPORTED and EXEMPT if this Item is imported or a book, food, or 
@@ -110,5 +124,5 @@ public class Item {
 	/** Item tax */
 	private double tax; 
 	/** The data we'll use to classify an item. */
-	private Data classifier;
+	private final static Data classifier = new Data();
 }

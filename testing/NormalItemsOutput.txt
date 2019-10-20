@@ -1,0 +1,4 @@
+2 pens: 2.20
+1 bag: 0.15
+Sales Taxes: 0.25
+Total: 2.35
