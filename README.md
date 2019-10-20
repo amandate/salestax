@@ -17,8 +17,12 @@ up to the nearest 0.05) amount of sales tax.
 In the `src` folder, run `javac *.java`
 
 Afterwards, when you run `java Main`, you can input multiple text files. 
-Be sure the text files contain are of the same format as originally provided input.
-(As displayed in the images above).
+Be sure the text files are of the same format as provided in **Expected
+Input Text File Format** below.
+Also be sure the location of the file that you provide as input is in
+relevance to the `src` folder.
+There are several text files you can input in `testing` if you don't
+want to make your own! 
 * Example 1: `java Main "...testing/input1.txt"`
 * Example 2: `java Main "...testing/input1.txt" "...testing/input2.txt" 
 "...testing/input3.txt"`
