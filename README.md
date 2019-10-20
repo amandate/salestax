@@ -26,9 +26,9 @@ Be sure the text files contain are of the same format as originally provided inp
 ## Expected Input Text File Format
 Each line represents an item.
 
-Items must be in the format: [Quantity] [Item Name] at [Item Price]
+Items must be in the format: `[Quantity] [Item Name] at [Item Price]`
 
-If the quantity is greater than 1, the given [Item Price] represents the price for **one**
+If the quantity is greater than 1, the given `[Item Price]` represents the price for **one**
 of this item. When receipt is outputted, the provided price of that item includes
 tax and quantity. (Aka it's the price for that quantity of items.
 
