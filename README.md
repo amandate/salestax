@@ -67,6 +67,9 @@ a book title or a brand of chocolate bar.
 	* Item.java - Represents an item from the passed in text file.
 	* Receipt.java - Represents a complete receipt with all items, total sales 
 	tax, and total price.
+	* Exception.java - Handles throwing exceptions when the program receives
+	input it's not supposed to.
+	* Unit_Test.java - JUnit Tests to test general functionality of program
 * testing - Folder containing all test input files.
 
 ## Resources
